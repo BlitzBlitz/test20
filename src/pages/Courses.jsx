@@ -1,5 +1,7 @@
-import { Hero, Navbar } from "../components";
 import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
+import CoursesContainer from "../components/CoursesContainer";
+import CoursesHero from "../components/CoursesHero";
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
 export default function Courses() {
@@ -18,9 +20,8 @@ export default function Courses() {
       <div className="relative z-0 bg-primary">
         <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
           <Navbar />
-          <Hero isContact={true} />
-          <Hero isContact={true} />
-          <Hero isContact={true} />
+          <CoursesHero></CoursesHero>
+          <CoursesContainer></CoursesContainer>
         </div>
 
         <Footer></Footer>
