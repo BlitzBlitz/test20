@@ -1,5 +1,6 @@
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
+import CoursesAbout from "../components/CoursesAbout";
 import CoursesContainer from "../components/CoursesContainer";
 import CoursesHero from "../components/CoursesHero";
 import { useLocation } from "react-router-dom";
@@ -23,6 +24,7 @@ export default function Courses() {
           <CoursesHero></CoursesHero>
           <CoursesContainer></CoursesContainer>
         </div>
+        <CoursesAbout></CoursesAbout>
 
         <Footer></Footer>
       </div>
