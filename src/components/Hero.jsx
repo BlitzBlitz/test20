@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import React from "react";
 import { styles } from "../styles";
 
-const Hero = () => {
+const Hero = ({ isContact }) => {
   const ComputerCanvas = React.lazy(() => import("./canvas/Computers"));
   return (
     <section className={`relative w-full h-screen mx-auto `}>
@@ -21,10 +21,11 @@ const Hero = () => {
         </div>
       </div>
 
-      <React.Suspense fallback={<div>Loading...</div>}>
-        <ComputerCanvas />
-      </React.Suspense>
-
+      {!isContact && (
+        <React.Suspense fallback={<div>Loading...</div>}>
+          <ComputerCanvas />
+        </React.Suspense>
+      )}
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
         <a href="#about">
           <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
