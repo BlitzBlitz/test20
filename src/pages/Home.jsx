@@ -9,8 +9,22 @@ import {
   EarthCanvas,
 } from "../components";
 import Footer from "../components/Footer";
+import { useLocation } from "react-router-dom";
+import { useEffect } from "react";
 
 export default function Home() {
+  const location = useLocation();
+
+  const { pathname, hash } = useLocation();
+
+  useEffect(() => {
+    const element = hash ? document.querySelector(hash) : null;
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    } else {
+      window.scrollTo(0, 0);
+    }
+  }, [pathname, hash]);
   return (
     <div>
       <div className="relative z-0 bg-primary">

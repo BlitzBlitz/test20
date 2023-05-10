@@ -60,9 +60,9 @@ const Navbar = () => {
               } hover:text-white text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(nav.title)}
             >
-              <a href={nav.id === "courses" ? "/courses" : `/#${nav.id}`}>
+              <Link to={nav.id === "courses" ? "courses" : `/#${nav.id}`}>
                 {nav.title}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>

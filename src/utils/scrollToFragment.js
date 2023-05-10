@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
-function ScrollToFragment() {
+function scrollToFragment() {
   const location = useLocation();
 
   useEffect(() => {
@@ -19,4 +19,4 @@ function ScrollToFragment() {
   return null;
 }
 
-export default ScrollToFragment;
+export default scrollToFragment;
