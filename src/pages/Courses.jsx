@@ -1,10 +1,12 @@
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import CoursesAbout from "../components/CoursesAbout";
+import Subscribe from "../components/Subscribe";
 import CoursesContainer from "../components/CoursesContainer";
 import CoursesHero from "../components/CoursesHero";
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
+
 export default function Courses() {
   const { pathname, hash } = useLocation();
 
@@ -26,6 +28,7 @@ export default function Courses() {
         </div>
         <CoursesAbout></CoursesAbout>
 
+        <Subscribe></Subscribe>
         <Footer></Footer>
       </div>
     </div>

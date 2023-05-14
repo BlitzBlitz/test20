@@ -7,9 +7,9 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 
 import { styles } from "../styles";
-import { experiences } from "../constants";
+import { experiences, registerSteps } from "../constants";
 import { SectionWrapper } from "../hoc";
-import Register from "./Register";
+import GreenBar from "./GreenBar";
 
 const ExperienceCard = ({ experience }) => {
   return (
@@ -75,7 +75,7 @@ const Experience = () => {
           Your journey starts here...
         </h2>
       </div>
-      <Register></Register>
+      <GreenBar steps={registerSteps}></GreenBar>
       <div className=" flex flex-col">
         <VerticalTimeline lineColor="#00ce8d" iconBg="red">
           {experiences.map((experience, index) => (

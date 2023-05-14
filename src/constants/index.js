@@ -263,5 +263,42 @@ const projects = [
     page_url: "https://kuroshkhaliqi.github.io/landing-page/",
   },
 ];
+const registerSteps = [
+  {
+    title: "Book",
+    desc: "Book a meeting with one of our teachers to get an overview of Pakashum",
+  },
+  {
+    title: "Schedule",
+    desc: "Schedule two free demo classes to experience PakaShum` learning style",
+  },
 
-export { services, technologies, experiences, testimonials, projects };
+  {
+    title: "Join",
+    desc: "  Join one of our courses and enhance your coding skills to the next level",
+  },
+];
+const joinReasons = [
+  {
+    title: "Speed UP",
+    desc: "Speed up your learning with the support of our tutors",
+  },
+  {
+    title: "Collaburate",
+    desc: "Collaburate with other students to build your portfolio",
+  },
+
+  {
+    title: "Get Support",
+    desc: "Be job-ready and have lifetime career counseling",
+  },
+];
+export {
+  services,
+  technologies,
+  experiences,
+  testimonials,
+  projects,
+  registerSteps,
+  joinReasons,
+};
