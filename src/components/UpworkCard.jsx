@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 
 export const UpworkCard = ({ testemonial }) => (
-  <Tilt className="w-9/12 my-3">
+  <Tilt className="md:w-9/12 my-3">
     <motion.div
       variants={fadeIn("right", "spring")}
       className="w-full rounded-[20px] border-green-up border-2"
@@ -18,7 +18,7 @@ export const UpworkCard = ({ testemonial }) => (
           scale: 1,
           speed: 450,
         }}
-        className={` rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly  flex-col`}
+        className={` rounded-[20px] md:py-5 p-3 md:px-12 min-h-[280px] flex justify-evenly  flex-col`}
       >
         <h3 className="text-green-up text-[20px] font-bold ">
           {testemonial.title}
@@ -33,7 +33,7 @@ export const UpworkCard = ({ testemonial }) => (
           <span>{testemonial.period}</span>
         </div>
         <i>{testemonial.desc}</i>
-        <div className="flex justify-between w-1/2">
+        <div className="flex justify-between md:w-1/2">
           <span>${testemonial.totalPrice}</span>
           <span>${testemonial.pricePerHour} /hr</span>
           <span>{testemonial.totalHours} hours</span>

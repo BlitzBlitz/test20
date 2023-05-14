@@ -60,9 +60,7 @@ const About = () => {
           Our success in <span className="text-green-up">Upwork</span>
         </h2>
       </motion.div>
-      <div
-        className={`${styles.paddingX} flex flex-col items-center bg-[#f4f4f4] text-primary `}
-      >
+      <div className={` flex flex-col  bg-[#f4f4f4] text-primary `}>
         {upworkTestemonials.map((testemonial) => (
           <UpworkCard testemonial={testemonial} />
         ))}
