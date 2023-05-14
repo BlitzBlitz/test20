@@ -36,7 +36,7 @@ const CoursesContainer = () => {
   );
   return (
     <div className={` -scroll-mt-6 ${styles.paddingX} ${styles.paddingY}`}>
-      <h2 className={styles.sectionHeadText + " text-white-100"}>
+      <h2 className={styles.sectionHeadText + " text-center text-white-100"}>
         Featured Paths
       </h2>
       <div className="mt-20 flex flex-wrap gap-10 items-center justify-center">

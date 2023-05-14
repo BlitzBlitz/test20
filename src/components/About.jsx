@@ -3,7 +3,8 @@ import Tilt from "react-tilt";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import { services } from "../constants";
+import { upworkTestemonials } from "../constants";
+import { UpworkCard } from "../components/UpworkCard";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 
@@ -39,7 +40,7 @@ const About = () => {
   return (
     <div
       id="about"
-      className={`${styles.paddingX} ${styles.paddingY} bg-[#f4f4f4] text-primary`}
+      className={`${styles.paddingX} pt-6 bg-[#f4f4f4] text-primary `}
     >
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>Introduction</p>
@@ -52,18 +53,18 @@ const About = () => {
       >
         PakaShum` is an experienced team of programming trainers aiming to teach
         the next generation of coders. Our beginner-friendly online classes make
-        it possible for students of all ages to start programming today. Click
-        one of the package below and explore more.
+        it possible for students of all ages to start programming today.
       </motion.p>
-
-      <div className="mt-20 flex flex-wrap gap-10 items-center justify-center">
-        {services.map((service, index) => (
-          <ServiceCard
-            key={service.title}
-            index={index}
-            {...service}
-            classes={index % 2 === 1 ? "bg-green" : "bg-primary"}
-          />
+      <motion.div variants={textVariant()}>
+        <h2 className={styles.sectionHeadText}>
+          Our success in <span className="text-green-up">Upwork</span>
+        </h2>
+      </motion.div>
+      <div
+        className={`${styles.paddingX} flex flex-col items-center bg-[#f4f4f4] text-primary `}
+      >
+        {upworkTestemonials.map((testemonial) => (
+          <UpworkCard testemonial={testemonial} />
         ))}
       </div>
     </div>

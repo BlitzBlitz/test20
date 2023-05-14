@@ -293,6 +293,26 @@ const joinReasons = [
     desc: "Be job-ready and have lifetime career counseling",
   },
 ];
+const upworkTestemonials = [
+  {
+    title: "Full stack development tutor needed",
+    review: "5.00",
+    period: "Jan 21, 2023 - Mar 25, 2023",
+    desc: "Klement is one of the best instructors I have ever had. He knows his stuff and communicates with his students well. His project based way of teaching is very effective as it makes one learn quicker. I was able to go from zero to fluent in HTML and CSS in a week of training. I would highly recommend any aspiring full stack student to give him a try.",
+    totalPrice: "860.00",
+    pricePerHour: "20.00",
+    totalHours: "43",
+  },
+  {
+    title: "Full stack development tutor needed",
+    review: "5.00",
+    period: "Jan 21, 2023 - Mar 25, 2023",
+    desc: "Klement is one of the best instructors I have ever had. He knows his stuff and communicates with his students well. His project based way of teaching is very effective as it makes one learn quicker. I was able to go from zero to fluent in HTML and CSS in a week of training. I would highly recommend any aspiring full stack student to give him a try.",
+    totalPrice: "860.00",
+    pricePerHour: "20.00",
+    totalHours: "43",
+  },
+];
 export {
   services,
   technologies,
@@ -301,4 +321,5 @@ export {
   projects,
   registerSteps,
   joinReasons,
+  upworkTestemonials,
 };
