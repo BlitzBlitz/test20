@@ -304,13 +304,22 @@ const upworkTestemonials = [
     totalHours: "43",
   },
   {
-    title: "Full stack development tutor needed",
+    title: "Java Leetcode help",
     review: "5.00",
-    period: "Jan 21, 2023 - Mar 25, 2023",
-    desc: "Klement is one of the best instructors I have ever had. He knows his stuff and communicates with his students well. His project based way of teaching is very effective as it makes one learn quicker. I was able to go from zero to fluent in HTML and CSS in a week of training. I would highly recommend any aspiring full stack student to give him a try.",
-    totalPrice: "860.00",
-    pricePerHour: "20.00",
-    totalHours: "43",
+    period: "Dec 30, 2022 - Apr 22, 2023",
+    desc: "A great teach who explains things very well, best freelancer I have worked with one learning coding material.",
+    totalPrice: "156.00",
+    pricePerHour: "12.00",
+    totalHours: "13",
+  },
+  {
+    title: "Java - guidance",
+    review: "5.00",
+    period: "Jul 31, 2021 - Sep 8, 2021 ",
+    desc: "Second time to cooperate with Klement. Job well done, again. Thx!",
+    totalPrice: "155.00",
+    pricePerHour: "15.00",
+    totalHours: "10",
   },
 ];
 export {

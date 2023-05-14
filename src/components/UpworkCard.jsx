@@ -32,7 +32,7 @@ export const UpworkCard = ({ testemonial }) => (
           <span className="ml-1">{testemonial.review}</span>{" "}
           <span>{testemonial.period}</span>
         </div>
-        <i>{testemonial.desc}</i>
+        <i>"{testemonial.desc}"</i>
         <div className="flex justify-between md:w-1/2">
           <span>${testemonial.totalPrice}</span>
           <span>${testemonial.pricePerHour} /hr</span>

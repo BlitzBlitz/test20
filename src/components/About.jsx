@@ -61,8 +61,8 @@ const About = () => {
         </h2>
       </motion.div>
       <div className={` flex flex-col  bg-[#f4f4f4] text-primary `}>
-        {upworkTestemonials.map((testemonial) => (
-          <UpworkCard testemonial={testemonial} />
+        {upworkTestemonials.map((testemonial, index) => (
+          <UpworkCard testemonial={testemonial} key={index} />
         ))}
       </div>
     </div>
