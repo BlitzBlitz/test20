@@ -44,20 +44,20 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Full Stack Web Developer",
-    icon: web,
+    title: "Junior Coder",
+    icon: creator,
   },
   {
-    title: "Frontend Developer",
+    title: "Front End Basics",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
-    icon: backend,
+    title: "Front End Advanced",
+    icon: web,
   },
   {
-    title: "Junior Coder",
-    icon: creator,
+    title: "Back End Basics",
+    icon: software,
   },
 ];
 
@@ -120,7 +120,7 @@ const experiences = [
   {
     title: "Junior Coder",
     company_name: "Designed for the youth",
-    icon: mobile,
+    icon: creator,
     iconBg: "#383E56",
     date: "20 Weeks",
     points: [
@@ -336,6 +336,88 @@ const upworkTestemonials = [
     totalHours: "10",
   },
 ];
+const courses = [
+  {
+    title: "Junior Coder",
+    company_name: "Designed for the youth",
+    icon: creator,
+    date: "20 Weeks",
+    learning: [
+      "Build multiple high quality website & UI projects",
+      "HTML5 semantic layout & CSS fundamentals.",
+      "Website Hosting & Deployment With FTP & Git",
+      "CSS variables, transitions, dropdowns, overlays & more",
+      "Flexbox & CSS grid projects",
+      "Learn Sass, including variables, nesting, mixins and more",
+    ],
+    next: "Build 10 games in 10 sessions with PakaShum`",
+    price: 899.99,
+  },
+  {
+    title: "Junior Coder",
+    company_name: "Designed for the youth",
+    icon: creator,
+    date: "20 Weeks",
+    learning: [
+      "Build multiple high quality website & UI projects",
+      "HTML5 semantic layout & CSS fundamentals.",
+      "Website Hosting & Deployment With FTP & Git",
+      "CSS variables, transitions, dropdowns, overlays & more",
+      "Flexbox & CSS grid projects",
+      "Learn Sass, including variables, nesting, mixins and more",
+    ],
+    next: "Build 10 games in 10 sessions with PakaShum`",
+    price: 899.99,
+  },
+  {
+    title: "Junior Coder",
+    company_name: "Designed for the youth",
+    icon: creator,
+    date: "20 Weeks",
+    learning: [
+      "Build multiple high quality website & UI projects",
+      "HTML5 semantic layout & CSS fundamentals.",
+      "Website Hosting & Deployment With FTP & Git",
+      "CSS variables, transitions, dropdowns, overlays & more",
+      "Flexbox & CSS grid projects",
+      "Learn Sass, including variables, nesting, mixins and more",
+    ],
+    next: "Build 10 games in 10 sessions with PakaShum`",
+    price: 899.99,
+  },
+  {
+    title: "Junior Coder",
+    company_name: "Designed for the youth",
+    icon: creator,
+    date: "20 Weeks",
+    learning: [
+      "Build multiple high quality website & UI projects",
+      "HTML5 semantic layout & CSS fundamentals.",
+      "Website Hosting & Deployment With FTP & Git",
+      "CSS variables, transitions, dropdowns, overlays & more",
+      "Flexbox & CSS grid projects",
+      "Learn Sass, including variables, nesting, mixins and more",
+    ],
+    next: "Build 10 games in 10 sessions with PakaShum`",
+    price: 899.99,
+  },
+  {
+    title: "Junior Coder",
+    company_name: "Designed for the youth",
+    icon: creator,
+    date: "20 Weeks",
+    learning: [
+      "Build multiple high quality website & UI projects",
+      "HTML5 semantic layout & CSS fundamentals.",
+      "Website Hosting & Deployment With FTP & Git",
+      "CSS variables, transitions, dropdowns, overlays & more",
+      "Flexbox & CSS grid projects",
+      "Learn Sass, including variables, nesting, mixins and more",
+    ],
+    next: "Build 10 games in 10 sessions with PakaShum`",
+    price: 899.99,
+  },
+];
 export {
   services,
   technologies,
@@ -345,4 +427,5 @@ export {
   registerSteps,
   joinReasons,
   upworkTestemonials,
+  courses,
 };

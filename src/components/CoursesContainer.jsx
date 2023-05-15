@@ -13,7 +13,7 @@ const CoursesContainer = () => {
         className="w-full green-pink-gradient rounded-[20px] shadow-card"
       >
         <Link
-          to={"/course/1"}
+          to={"/courses#about"}
           options={{
             max: 45,
             scale: 1,
@@ -35,9 +35,12 @@ const CoursesContainer = () => {
     </Tilt>
   );
   return (
-    <div className={` -scroll-mt-6 ${styles.paddingX} ${styles.paddingY}`}>
+    <div
+      id="courses"
+      className={` -scroll-mt-6 ${styles.paddingX} ${styles.paddingY}`}
+    >
       <h2 className={styles.sectionHeadText + " text-center text-white-100"}>
-        Featured Paths
+        Featured Courses
       </h2>
       <div className="mt-20 flex flex-wrap gap-10 items-center justify-center">
         {services.map((service, index) => (

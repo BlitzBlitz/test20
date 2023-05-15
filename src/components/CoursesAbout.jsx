@@ -2,13 +2,14 @@ import Tilt from "react-tilt";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import { services, joinReasons } from "../constants";
+import { services, joinReasons, courses } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 import GreenBar from "../components/GreenBar";
+import { CourseCard } from "./CourseCard";
 
 const ServiceCard = ({ index, title, icon, classes }) => (
-  <Tilt className="xs:w-[250px] w-full">
+  <Tilt className="xs:w-[250px] w-1/2">
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
       className="w-full green-pink-gradient rounded-[20px] shadow-card"
@@ -51,14 +52,9 @@ const CoursesAbout = () => {
       ></motion.p>
       <GreenBar steps={joinReasons} />
 
-      <div className="mt-20 flex flex-wrap gap-10 items-center justify-center">
-        {services.map((service, index) => (
-          <ServiceCard
-            key={service.title}
-            index={index}
-            {...service}
-            classes={index % 2 === 1 ? "bg-green" : "bg-primary"}
-          />
+      <div className="mt-20 px-3 flex flex-wrap gap-10 items-center justify-center">
+        {courses.map((course, index) => (
+          <CourseCard course={course} />
         ))}
       </div>
     </div>

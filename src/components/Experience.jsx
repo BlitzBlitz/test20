@@ -63,9 +63,12 @@ const ExperienceCard = ({ experience }) => {
           >
             {experience.title}
           </Link>
-          <h1 className="text-primary font-medium bg-green p-2 rounded">
-            {"$" + experience.price}
-          </h1>
+          <Link
+            to={"/courses#about"}
+            className="text-primary font-medium bg-green p-2 rounded"
+          >
+            Explore
+          </Link>
         </div>
 
         <p

@@ -26,7 +26,7 @@ const CoursesHero = () => {
       </div>
 
       <div className=" pt-6 w-full flex justify-center items-center">
-        <Link to="#courses">
+        <Link to="/courses#about">
           <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start">
             <motion.div
               animate={{
