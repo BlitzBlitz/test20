@@ -1,4 +1,4 @@
-import React from "react";
+import { useState, useEffect } from "react";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -10,8 +10,11 @@ import { styles } from "../styles";
 import { experiences, registerSteps } from "../constants";
 import { SectionWrapper } from "../hoc";
 import GreenBar from "./GreenBar";
+import { Link } from "react-router-dom";
+import { useIsMobile } from "../hooks/useIsMobile";
 
 const ExperienceCard = ({ experience }) => {
+  const isMobile = useIsMobile();
   return (
     <VerticalTimelineElement
       contentStyle={{
@@ -34,11 +37,14 @@ const ExperienceCard = ({ experience }) => {
     >
       <div>
         <div className="flex justify-between items-start">
-          <h3 className="text-white text-[24px] font-bold">
+          <Link
+            to={`/courses#${experience.title}`}
+            className="text-white text-[24px] font-bold hover:text-green"
+          >
             {experience.title}
-          </h3>
+          </Link>
           <h1 className="text-primary font-medium bg-green p-2 rounded">
-            {experience.title.includes("Basics") ? "999$" : "1199$"}
+            {"$" + experience.price}
           </h1>
         </div>
 
@@ -51,14 +57,19 @@ const ExperienceCard = ({ experience }) => {
       </div>
 
       <ul className="mt-5 list-disc ml-5 space-y-2">
-        {experience.points.map((point, index) => (
-          <li
-            key={`experience-point-${index}`}
-            className="text-white-100 text-[14px] pl-1 tracking-wider"
-          >
-            {point}
-          </li>
-        ))}
+        {experience.points.map((point, index) => {
+          if (isMobile && index > 1) {
+            return;
+          }
+          return (
+            <li
+              key={`experience-point-${index}`}
+              className="text-white-100 text-[14px] pl-1 tracking-wider"
+            >
+              {point}
+            </li>
+          );
+        })}
       </ul>
     </VerticalTimelineElement>
   );

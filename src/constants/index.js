@@ -118,18 +118,30 @@ const technologies = [
 
 const experiences = [
   {
+    title: "Junior Coder",
+    company_name: "Designed for the youth",
+    icon: mobile,
+    iconBg: "#383E56",
+    date: "20 Weeks",
+    points: [
+      "Interactive learning: Use hands-on activities & coding projects to develop coding skills and problem-solving abilities.",
+      "Project-based approach: Focus on relevant, practical projects to allow learners to apply HTML, CSS, and JavaScript concepts.",
+      "Collaborative work: Encourage teamwork and communication skills by having learners work in pairs or small groups.",
+    ],
+    price: 899,
+  },
+  {
     title: "Front End Basics",
     company_name: "Great for starters",
     icon: mobile,
     iconBg: "#383E56",
     date: "15 Weeks",
     points: [
-      "Introduction to HTML: This section will cover the basics of HTML including tags, attributes, and elements.",
-      "Fundamentals of CSS: This section will introduce students to CSS and teach them how to style their HTML pages.",
-      "Interactive Web Pages with JavaScript: This section will teach students how to add interactivity to their web pages using JavaScript. ",
-      "Responsive Design: This section will teach students how to make their websites responsive, ensuring they work well on different devices and screen sizes. ",
-      "Project-based Learning: Throughout the course, students will work on a series of projects to reinforce the concepts learned.",
+      "Introduction to HTML and CSS: This course will cover all you need to know about HTML and CSS",
+      "Interactive Web Pages with JavaScript: This course will teach students how to add interactivity to their web pages using JavaScript. ",
+      "Responsive Design: This course will teach students how to make their websites responsive, ensuring they work well on different devices and screen sizes. ",
     ],
+    price: 999,
   },
   {
     title: "Front End Advanced",
@@ -138,12 +150,12 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "20 Weeks",
     points: [
-      "Advanced JavaScript Concepts: This section will cover advanced JavaScript topics like closures, promises, async/await, and functional programming techniques.",
-      "React Fundamentals: This section will introduce students to React, a popular front-end library for building web applications.",
-      "Advanced React Concepts: This section will cover more advanced React topics like context, hooks, and Redux.",
-      "Building Web Applications: This section will teach students how to build full-stack web applications using React and other front-end tools.",
-      "Real-World Projects: Throughout the course, students will work on a series of projects that simulate real-world scenarios. ",
+      "Advanced JavaScript Concepts: This course will cover advanced JavaScript topics like closures, promises, async/await, and functional programming techniques.",
+      "React Fundamentals: This course will introduce students to React, a popular front-end library for building web applications.",
+      "Advanced React Concepts: This course will cover more advanced React topics like context, hooks, and Redux.",
+      "Building Web Applications: This course will teach students how to build full-stack web applications using React and other front-end tools.",
     ],
+    price: 1199,
   },
   {
     title: "Back End Basics",
@@ -152,11 +164,12 @@ const experiences = [
     iconBg: "#383E56",
     date: "15 Weeks",
     points: [
-      "Introduction to Node.js: This section will cover the basics of Node.js, including the event loop, non-blocking I/O, and modules. ",
-      "Database Fundamentals: This section will introduce students to databases and teach them how to work with them in a Node.js environment",
-      "Building Web APIs: This section will teach students how to build web APIs using Node.js and Express, a popular Node.js framework.",
-      "GIT Version Control: This section will teach students how to use GIT, a popular version control system used by developers to manage code changes. ",
+      "Introduction to Node.js: This course will cover the basics of Node.js, including the event loop, non-blocking I/O, and modules. ",
+      "Database Fundamentals: This course will introduce students to databases and teach them how to work with them in a Node.js environment",
+      "Building Web APIs: This course will teach students how to build web APIs using Node.js and Express, a popular Node.js framework.",
+      "GIT Version Control: This course will teach students how to use GIT, a popular version control system used by developers to manage code changes. ",
     ],
+    price: 999,
   },
   {
     title: "Back End Advanced",
@@ -165,11 +178,12 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "20 Weeks",
     points: [
-      "Advanced Database Concepts: This section will cover more advanced database concepts like indexing, normalization, transactions, and scaling.",
+      "Advanced Database Concepts: This course will cover more advanced database concepts like indexing, normalization, transactions, and scaling.",
       "Students will also learn how to work with ORMs and query builders.",
-      "API Security: This section will cover best practices for securing APIs, including authentication and authorization, rate limiting, encryption, and validation.",
+      "API Security: This course will cover best practices for securing APIs, including authentication and authorization, rate limiting, encryption, and validation.",
       "Collaburation: Participating in code reviews and providing constructive feedback to other developers.",
     ],
+    price: 1199,
   },
 ];
 
