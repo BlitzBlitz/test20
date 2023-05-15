@@ -2,9 +2,8 @@ import { motion } from "framer-motion";
 import React from "react";
 import { styles } from "../styles";
 import { Link } from "react-router-dom";
-
+import ComputerCanvas from "./canvas/Computers";
 const Hero = () => {
-  const ComputerCanvas = React.lazy(() => import("./canvas/Computers"));
   return (
     <section className={`relative w-full h-screen mx-auto `}>
       <div
@@ -22,9 +21,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <React.Suspense fallback={<div>Loading...</div>}>
-        <ComputerCanvas />
-      </React.Suspense>
+      <ComputerCanvas />
 
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
         <Link to="/#about">
