@@ -10,12 +10,27 @@ import {
 } from "../components";
 import Footer from "../components/Footer";
 import { useLocation } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect,useState } from "react";
 
 export default function Home() {
   const location = useLocation();
 
   const { pathname, hash } = useLocation();
+  const [homeComponent, setHomeComponent] = useState(null);
+  useEffect(() => {
+    const loadHomeComponent = async () => {
+      // Dynamically import the module
+      const module = await import('../components/Hero');
+
+      // Access the default export of the module
+      const DynamicComponent = module.default;
+
+      // Set the dynamically loaded component
+      setHomeComponent(<Hero />);
+    };
+
+    loadHomeComponent();
+  }, []);
 
   useEffect(() => {
     const element = hash ? document.querySelector(hash) : null;
@@ -30,7 +45,7 @@ export default function Home() {
       <div className="relative z-0 bg-primary">
         <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
           <Navbar />
-          <Hero />
+          {homeComponent}
         </div>
         <About />
         <Experience />

@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Home from "./pages/Home";
-import Courses from "./pages/Courses";
+import React, { lazy, Suspense } from 'react';
+const Courses = lazy(() => import('./pages/Courses'));
 const App = () => {
   return (
     <BrowserRouter>
@@ -9,7 +10,9 @@ const App = () => {
           <Home></Home>
         </Route>
         <Route path="/courses">
-          <Courses></Courses>
+          <Suspense fallback={<div>Loading...</div>}>
+            <Courses />
+          </Suspense>
         </Route>
       </Switch>
     </BrowserRouter>
