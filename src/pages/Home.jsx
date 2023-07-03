@@ -6,11 +6,10 @@ import {
   Hero,
   Navbar,
   Works,
-  EarthCanvas,
 } from "../components";
 import Footer from "../components/Footer";
 import { useLocation } from "react-router-dom";
-import { useEffect,useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Home() {
   const location = useLocation();
@@ -20,7 +19,7 @@ export default function Home() {
   useEffect(() => {
     const loadHomeComponent = async () => {
       // Dynamically import the module
-      const module = await import('../components/Hero');
+      const module = await import("../components/Hero");
 
       // Access the default export of the module
       const DynamicComponent = module.default;
@@ -53,9 +52,6 @@ export default function Home() {
         <Works />
 
         <div className="relative z-0 relative">
-          <div className="absolute top-0 left-0 w-full h-full">
-            <EarthCanvas />
-          </div>
           <Contact />
         </div>
         <Footer></Footer>
