@@ -5,7 +5,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 
 export const UpworkCard = ({ testemonial }) => (
-  <Tilt className="md:w-9/12 my-3">
+  <Tilt
+    className="md:w-9/12 my-3"
+    options={{
+      max: 25,
+      scale: 1.01,
+    }}
+  >
     <motion.div
       variants={fadeIn("right", "spring")}
       className="w-full rounded-[20px] border-green-up border-2"
@@ -13,11 +19,6 @@ export const UpworkCard = ({ testemonial }) => (
       <a
         href={"https://www.upwork.com/freelancers/~01a6434527ec86c9e4"}
         target="_blank"
-        options={{
-          max: 45,
-          scale: 1,
-          speed: 450,
-        }}
         className={` rounded-[20px] md:py-5 p-3 md:px-12 min-h-[280px] flex justify-evenly  flex-col`}
       >
         <h3 className="text-green-up text-[20px] font-bold ">
